@@ -20,7 +20,7 @@
         <input type="submit" class="sub-chercher" value="chercher">
     </div>
     
-    <ul>
+    <ul class="ul">
     <h4>listes des retraites</h4>
         <li class="one"><a href=""><i class="bi bi-person-fill"></i>presone1</a> <p>2023</p></li>
         <li><a href=""><i class="bi bi-person-fill"></i>presone1</a> <p>2023</p></li>
