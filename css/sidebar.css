@@ -5,6 +5,7 @@
     font-family: Arial;
     text-decoration: none;
     list-style: none;
+
     
 }
 
@@ -86,17 +87,18 @@ margin-bottom: 10px;
         border-radius: 20px;
         font-size: 13px;
         letter-spacing: 1px;
-        background-color:#0095F6 ;
+        background-color:#0094f6 ;
         color:#fff;
         margin-top: 27px;
         border: none;
     }
 
    .ul h4{
+    position: relative;
         font-weight: normal;
         letter-spacing: 1px;
         text-transform: capitalize;
-        margin-bottom: 17px;
+       
         margin-top: 20px;
     }
 

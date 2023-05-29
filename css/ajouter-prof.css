@@ -24,17 +24,6 @@
     right:10px;
     width:80%;
     height: 90%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.navigation-pages::-webkit-scrollbar {
-    width: 4px;
-    background-color: rgb(230, 230, 230);
-}
-.navigation-pages::-webkit-scrollbar-thumb{
-    width: 4px;
-    height:20px;
-    background-color: #b5b5b5;
 }
 .navigation{
     width:100%;
@@ -53,32 +42,49 @@
 }
 .nav-pages ul{
     display: flex;
-    padding-left:20px;
+    padding-left:40px;
     gap: 50px;
 }
 ul li a{
     font-size: 14px;
     color:#ababab;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+ .uli li:hover a{
+color:#7f64e9;
+}
+.uli li:hover{
+    border-bottom: 2px solid #7f64e9;
 }
 
 form{
     position: relative;
     width:90%;
-    height:500px;
+    height:fit-content;
     margin-left: 20px;
-   
-
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+form::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgb(230, 230, 230);
+}
+form::-webkit-scrollbar-thumb{
+    width: 4px;
+    height:20px;
+    background-color: #b5b5b5;
 }
 .inputs{
     margin-top: 30px;
     position:relative;
     width: 100%;
-    height:85%;
+    height:fit-content;
    display: flex;
    flex-direction: column;
    gap: 8px;
-   border-bottom:1px solid #e3e3e3;
-   padding-bottom: 13px;
+   padding-bottom: 18px;
 }
 .inputs input{
     position: relative;
@@ -100,11 +106,16 @@ input::placeholder{
     text-transform: capitalize;
 }
 .submit{
+    position:sticky;
+    background-color: #fff;
+    bottom: 0;
     width:100%;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top:1px solid #e3e3e3;
+
 }
 .submit input{
     width:200px;
@@ -122,6 +133,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 10px;
 }
 .del-save .del,
 .del-save .save{

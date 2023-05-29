@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ajouter-prof.css">
     <title>login</title>
 </head>
 <body>
@@ -17,29 +17,23 @@
 
 
 <div class="navigation-pages">
-<div class="navigation">
-    <div class="nav-pages">
-    <ul >
-        <li><a href="">liste</a></li>
-        <li><a href="">ajouter prof</a></li>
-        <li><a href="">absence </a></li>
-        <li><a href="">archifage</a></li>
-    </ul>
-    </div>
-</div>
 
+<?php include 'navigation.php';?>
 
 
 <form action="">
            <div class="inputs">
+           <input type="text" name="" placeholder="etablissement" id="">
+          <input type="text" name="" placeholder="nom et prenom" id="">
+          <input type="text" name="" placeholder="N_som" id="">
+          <input type="text" name="" placeholder="cin" id="">
+          <input type="text" name="" placeholder="date de naissance" id="">
+          <input type="text" name="" placeholder="matiere" id="">
+          <input type="text" name="" placeholder="date de recrutement" id="">
+          <input type="text" name="" placeholder="status" id="">
+          <input type="text" name="" placeholder="remarque" id="">
           <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
-          <input type="text" name="" placeholder="nom" id="">
+         
         </div>
 
         <div class="submit">
