@@ -25,8 +25,8 @@ if(isset($_POST['import'])){
     $nom=$value[0];
     $prenom=$value[1];
     $age=$value[2];
-
-        $conn->query("INSERT INTO test values('','$nom','$prenom','$age')");
+    
+         $conn->query("INSERT INTO personnel(NumeroSOM,Nom,Prenom,Matiere,Profession,DateRecrutement,Cin,Telephone,Adresse,Email,Point,Etat,id_Profession,Date_naiss,poste_budg) values('','$nom','$prenom','$age')");
     }
 
     header('location:list-prof.php');
