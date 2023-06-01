@@ -35,16 +35,40 @@
           <input type="text" name="" placeholder="nom" id="">
          
         </div>
-
         <div class="submit">
-            <input type="submit" value="Importer liste excel">
-            <div class="del-save">
+            <div class="div" data-open-modal>Importer liste excel</div>
+        <div class="del-save">
                 <a class="del" href=""> supprimer</a>
                 <a class="save" href=""> enregistrer</a>
             </div>
-        </div>
 
 </form>
+
+        <dialog data-modal>
+            <form action="uploads.php" method="post" enctype="multipart/form-data">
+                <label for="file" class="file"><i class="bi bi-file-earmark-arrow-up"></i>importer votre fichier </label>
+                <input type="file" name="excel" id="file" required>
+                <div class="butt">
+                <input class="imp" type="submit" name="import" value="Importer">
+                <button class="anul" type="submit" data-close-modal>annuler</button>
+                </div>
+            </form>
+            </dialog>
+
+
+<script>
+
+    const open = document.querySelector("[data-open-modal]");
+    const close = document.querySelector("[data-close-modal]");
+    const model = document.querySelector("[data-modal]");
+
+    open.addEventListener("click",()=>{
+        model.showModal();
+    });
+    close.addEventListener("click",()=>{
+        model.close();
+    })
+</script>
 </div>
 </section>
 

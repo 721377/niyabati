@@ -44,7 +44,11 @@ table thead{
     color:#7f64e9;
 } 
 thead th{
+    text-align: center;
    padding: 7px;
+}
+tr td{
+    padding:7px;
 }
 table tbody tr {
     height: 70px;

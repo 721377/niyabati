@@ -23,60 +23,48 @@
 <table>
 <Thead> 
         <th></th> 
-        <th> المؤسسة</th> 
-        <th> الاسم الكامل</th> 
-        <th> تاريخ الازدياد</th> 
-        <th> رقم البطاقة الوطنية</th> 
-        <th> رقم التأجير</th> 
+        
+        <th> ملاحظة</th> 
+        <th> الوضعية</th>   
         <th> إطار نظامي للأكاديمية</th> 
+        <th> مجموع النقط</th> 
         <th> تاريخ التوظيف أو التخرج</th> 
         <th> تاريخ التعيين بالمؤسسة</th> 
         <th> تاريخ التعيين بالمديرية</th> 
-        <th> مجموع النقط</th> 
-        <th> ملاحظة</th> 
-        <th> الوضعية</th> 
+        <th> تاريخ الازدياد</th> 
+        <th> رقم البطاقة الوطنية</th> 
+        <th> رقم التأجير</th> 
+        <th> الاسم الكامل</th>
+        <th> المؤسسة</th>
 </Thead>
 
 <tbody>
+    <?php
+
+    include 'config.php';
+    $res = $conn->query("SELECT * FROM test");
+    while($row= $res->fetch_array()){
+    ?>
 <tr><td class="icon">
     <a href=""><i class="bi bi-pencil-square"></i></a>
     <a href=""><i class="bi bi-trash"></i></a>
     <a href=""><i class="bi bi-eye"></i></i></a>
 </td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
+    <td><?= $row[1];?></td>
+    <td><?= $row[2];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+    <td><?= $row[3];?></td>
+   
     
-    </tr>
-
-    <tr><td class="icon">
-    <a href=""><i class="bi bi-pencil-square"></i></a>
-    <a href=""><i class="bi bi-trash"></i></a>
-    <a href=""><i class="bi bi-eye"></i></i></a>
-</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    <td>المؤسسة</td>
-    
-    </tr>
+<?php }?>
 
  
     
