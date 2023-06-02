@@ -1,0 +1,95 @@
+select{
+    position: relative;
+   width: 70%;
+   height: 45px;
+   background-color: #fff;
+   border-radius:4px;
+   outline: none;
+   border:1px solid #f2e4ff;
+   font-size: 14px;
+   text-align: left;
+   margin-left: 10px;
+   color: #7f64e9d3;
+   margin-top: 3px;
+   left: 400px;
+   top: 70px;
+   display: flex;
+   flex-direction: column;
+  
+    
+    /* Ajoutez d'autres styles personnalisés si nécessaire */
+  }
+  .navigation-pages{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    top:60px;
+    
+    width:80%;
+    height: 90%;
+    
+  left: 390px;
+}
+
+.navigation{
+    width:100%;
+    height:45px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   
+    padding-bottom: 1px;
+    
+    position: relative;
+    right: 70px;
+}
+
+.navigation .nav-pages{
+    width:100%;
+    display: flex;
+    align-items:left;
+    position: relative;
+    right: 70px;
+}
+.nav-pages ul{
+    display: flex;
+    padding-left:20px;
+    gap: 50px;
+}
+ul li a{
+    font-size: 14px;
+    color:#ababab;
+}
+
+.select-wrapper2{
+    top: 205px;
+    position: relative;
+   height: 45px;
+   width: 40%;
+   right: 70px;
+}
+.select-wrapper1{
+    top: 100px;
+    position: relative;
+   height: 45px;
+   width: 50%;
+
+}
+button{
+    width:100px;
+    height:40px;
+    border:1px solid #f87263;
+    background: #ea5252;
+    color:#fafafa;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-top: 30px;
+    position: relative;
+    top: 240px;
+    cursor: pointer;
+}
+label{
+    color: #000000d3;
+}
