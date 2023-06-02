@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial;
+    text-decoration: none;
+    list-style: none;
+}
+.table-box{
+    position:relative;
+    margin-top: 25px;
+    height:76%;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.039), -1px -1px 8px rgba(0, 0, 0, 0.05);
+
+
+    
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
+.table-box::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgb(230, 230, 230);
+}
+.table-box::-webkit-scrollbar-thumb{
+    width: 4px;
+    height:20px;
+    background-color: #b5b5b5;
+}
+table thead{
+    position: sticky;
+    top:0;
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    text-align: center;
+    border-bottom:1px solid #7f64e935;
+    color:#7f64e9;
+} 
+thead th{
+    padding: 10px;
+}
+table tbody tr {
+    height: 70px;
+    text-align: center;
+}
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(240, 240, 240);
+}
+
+
+.icon a {
+    color:#000;
+    font-size: 17px;
+    margin-left: 4px;
+}
+ a i{
+    transition: 0.2s color ease;
+ }
+a .bi-pencil-square{
+    color: #3eca8d;
+} 
+a .bi-trash{
+    color:#e26f88;
+}
+a .bi-eye{
+    color:rgb(142, 142, 255);
+}
+.print{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height:65px;
+    margin-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+  
+}
+.print a{
+    width:170px;
+    height: 40px;
+    background-color: #3eca8d;
+    color:#fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+  
+
+/* Bouttons */
+.submit{
+    position:sticky;
+    background-color: #fff;
+    bottom: 0;
+    width:100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top:1px solid #e3e3e3;
+
+}
+.submit .del-save{
+    width:700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.del-save .del,
+.del-save .save{
+ width:300px;
+ height:40px;
+ letter-spacing: 1px;
+ text-transform: capitalize;
+ display: flex;
+    align-items: center;
+    justify-content: center;
+ font-size: 14px;
+ border-radius: 15px;
+}
+.del{ 
+    border:1px solid #3eca8d;
+ color:#3eca8d;
+}
+.save{
+    background-color: #3eca8d;
+    color:#fff;
+}
